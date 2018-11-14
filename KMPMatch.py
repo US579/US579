@@ -38,7 +38,7 @@ def failureFunction(P):
 
 T = 'abacaabaccabacabaabb'
 P = 'abacab'
-print(KMPMatch(T,P))
+print('the first index of pattern matching in the text is :',KMPMatch(T,P))
 
 
 
