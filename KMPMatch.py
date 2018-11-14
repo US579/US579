@@ -21,7 +21,7 @@ def failureFunction(P):
     m = len(P)
     F = dict()
     F[0] = 0
-    i,j = 0,0
+    i,j = 1,0
     while i < m:
         if P[i] == P[j]:
             F[i] = j+1
@@ -32,6 +32,7 @@ def failureFunction(P):
         else:
             F[i] = 0
             i = i+1
+        print(F)
     return F
 
 
