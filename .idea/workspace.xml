@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ebafd18-e27b-4a52-9b05-7b767c739ee2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Boyer-Moore Algorithm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spider.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_pytest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_pytest.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="KMPMatch.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KMPMatch.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/KMPMatch.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -24,9 +23,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Boyer-Moore Algorithm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Boyer-Moore Algorithm.py">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="spider.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spider.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="pytest-sample.py" pinned="false" current-in-tab="false">
@@ -66,12 +69,13 @@
         <option value="$PROJECT_DIR$/pytest-sample.py" />
         <option value="$PROJECT_DIR$/test_pytest.py" />
         <option value="$PROJECT_DIR$/Boyer-Moore Algorithm.py" />
+        <option value="$PROJECT_DIR$/spider.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="21" />
-    <option name="y" value="23" />
+    <option name="x" value="81" />
+    <option name="y" value="40" />
     <option name="width" value="1287" />
     <option name="height" value="972" />
   </component>
@@ -80,7 +84,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -92,6 +95,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -109,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.spider">
     <configuration name="KMPMatch" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="US579" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,8 +132,31 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="spider" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="US579" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spider.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.KMPMatch" />
+      <item itemvalue="Python.spider" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.spider" />
         <item itemvalue="Python.KMPMatch" />
       </list>
     </recent_temporary>
@@ -148,13 +175,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="21" y="23" width="1287" height="972" extended-state="0" />
+    <frame x="339" y="129" width="1287" height="972" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16113745" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16113745" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32980132" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32914287" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -174,6 +201,27 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/KMPMatch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pytest-sample.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_pytest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/KMPMatch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -223,13 +271,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Boyer-Moore Algorithm.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/KMPMatch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
