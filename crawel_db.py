@@ -3,6 +3,10 @@ import requests
 import re
 import os
 import csv
+from pymongo import MongoClient
+from pymongo import errors
+
+
 
 path = '/Users/us579/Desktop/douban/'
 
