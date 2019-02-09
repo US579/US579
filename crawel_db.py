@@ -24,10 +24,29 @@ url_list+=['https://movie.douban.com/top250?start=%d&filter=' % page for page in
 
 
 
-def pic_download(path,url,name):
+client = MongoClient('127.0.0.1', 27017, username='us579', password='123456a')
+db = client.douban
+
+
+
+
+
+
+def save2data(movie):
+        client = MongoClient('127.0.0.1', 27017)
+        db = client.douban
+        doc_info_db = db.douban
+        try:
+                doc_info_db.insert_one(movie)
+        except errors.DuplicateKeyError:
+                return None
+
+
+def pic_download(url):
         r = requests.get(url)
-        with open(path+name,'wb') as f:
-                f.write(r.content)
+        return r.content
+        #with open(path+name,'rb') as f:
+               # f.write(r.content)
 
 
 def mov_list(url):
@@ -37,7 +56,19 @@ def mov_list(url):
         data = html.find('ol',{'class':'grid_view'})
         lis = data.find_all('li')
         movies = []
+
         for num in lis:
+                mv_information = {
+                        "rank": None,
+                        "name": None,
+                        "director": None,
+                        "actor": None,
+                        "year": None,
+                        "area": None,
+                        "score": None,
+                        "summary": None,
+                        "pciture" : None,
+                }
                 rank = num.find('em').get_text()
                 name = num.find('img')['alt']
                 pic = num.find('img')['src']
@@ -77,10 +108,21 @@ def mov_list(url):
                 except IOError as e:
                         print("IOError")
 
-                pic_download(path,pic,file_name)
+                pi = pic_download(pic)
 
                 sets = (rank,name,director,actor,year,area,score,summary)
                 movies.append(sets)
+                mv_information['rank'] = rank
+                mv_information['name'] = name
+                mv_information['director'] = director
+                mv_information['actor'] = actor
+                mv_information['year'] = year
+                mv_information['area'] = area
+                mv_information['score'] = score
+                mv_information['summary'] = summary
+                mv_information['picture'] = pi
+                print(mv_information)
+                save2data(mv_information)
         return movies
 
 
