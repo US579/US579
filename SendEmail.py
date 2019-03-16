@@ -21,7 +21,7 @@ def sendEmail(start,end):
     mail_title = u'US579'
 
     smtp = SMTP_SSL(host_server)
-    #smtp.set_debuglevel(1)
+    smtp.set_debuglevel(1)
     smtp.ehlo(host_server)
     smtp.login(sender_qq, pwd)
 
