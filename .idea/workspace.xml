@@ -208,10 +208,10 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.spider" />
-      <item itemvalue="Python.crawel_db" />
-      <item itemvalue="Python.appservice" />
       <item itemvalue="Python.SendEmail" />
+      <item itemvalue="Python.appservice" />
+      <item itemvalue="Python.crawel_db" />
+      <item itemvalue="Python.spider" />
       <item itemvalue="Python tests.py.test in US579" />
     </list>
     <recent_temporary>
@@ -238,6 +238,7 @@
       <workItem from="1552565253737" duration="122000" />
       <workItem from="1552565490205" duration="331000" />
       <workItem from="1552699031363" duration="387000" />
+      <workItem from="1552826186021" duration="3000" />
     </task>
     <servers />
   </component>
@@ -247,12 +248,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2118000" />
+    <option name="totallyTimeSpent" value="2121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="852" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2067239" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20958512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
