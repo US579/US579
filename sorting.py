@@ -35,7 +35,7 @@ def Quick_sort1(L):
         else:
             r.append(i)
             
-    return quick_sorting(l) + [key] + quick_sorting(r)
+    return Quick_sort1(l) + [key] + Quick_sort1(r)
 
 def Quick_sort2(L,l,r):
     if l>r:
