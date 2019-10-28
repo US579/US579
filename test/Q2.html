@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="Q1.html">Basics</a>
+        <a href="Q2.html">Level 100</a>
+        <a href="Q3.html">Level 200</a>
+        <a href="Q4.html">Real World Problem</a>
+    </div>
+    <h1 style="textAlign:left; padding:15px;fontSize:30px;color:darkred">Q2: Level 100</h1>
+    <h4 style="textAlign:left; fontweight:bold;fontSize:20px">1. Remove duplicates from an unsorted list (12,11,12,21,41,43,21)</h4>
+    <div style="padding:4px">
+        <h5 style="marginLeft:10px;fontweight:bold;fontSize:15px">
+                a. Write the method, make it as efficient as possible
+        </h5>
+                <h5 style="marginLeft:10px;fontweight:bold;fontSize:15px">
+                    b. Provide the Time Complexity
+                </h5>
+        <pre style="textAlign:left"class="brush: python">
+                        array = [12, 11, 12, 21, 41, 43, 21]
+                        def removeDup(array):
+                            dic = {}
+                            ans = []
+                        for ele in array:
+                            if ele not in dic.keys():
+                                dic[ele] = 1
+                                ans.append(ele)
+                            else:
+                                continue
+                        return ans
+                        print(removeDup(array))
+                   </pre>
+        <h5>Time Complexity: O(n) on average</h5>
+        <h4 style="marginLeft: 10px;fontweight: bold;fontSize: 20px">
+            2. Accept two strings and return true if one string is a
+            permutation of the other
+        </h4>
+        <h5 style="marginLeft: 10px;fontweight: bold;fontSize: 15px">
+            a. Write the method, make it as efficient as possible
+        </h5>
+        <h5 style="marginLeft: 10px;fontweight: bold;fontSize: 15px">
+            b. Provide the Time Complexity
+        </h5>
+    
+        <pre style="textAlign:left" class="brush: python">
+                       def check(s1, s2):
+                            l1 = [0]*26
+                            l2 = [0]*26
+                            for i in s1:
+                                l1[ord(i)-ord('a')] += 1
+                            for i in range(len(s2)):
+                                l2[ord(s2[i])-ord('a')] += 1
+                                if i >= len(s1):
+                                    l2[ord(s2[i-len(s1)])-ord('a')] -= 1
+                                if l1 == l2:
+                                    return True
+                            return False
+                   </pre>
+        <h5>Time complexity O(s1+s2)</h5>
+    </div>
+
+</body>
+
+</html>
